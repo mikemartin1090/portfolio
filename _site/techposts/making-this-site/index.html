@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Mike's Static Site</title>
+    </head>
+    <body>
+        <h1>Making this site</h1>
+
+        <p>The structure of this site is like so:</p>
+<pre><code>index.html # is my homepage that lists out all 'posts'
+-- recipes # where I am storing my recipes
+-- techposts # where I am writing technical posts...
+</code></pre>
+<p>I've decided to use 11ty as my static site generator, serve the static content on S3, use Route53 as my DNS, and Google domains as my registrar.</p>
+<p>The root of this site portfolio.fieldtripmike.com is where this static site will go for now...</p>
+<h3>Using 11ty</h3>
+<p>After following these tutorials and examples, I've put together what you see before your own eyes...</p>
+<ul>
+<li>https://www.11ty.dev/docs/tutorials/</li>
+<li>https://www.filamentgroup.com/lab/build-a-blog/</li>
+<li>https://keepinguptodate.com/pages/2019/06/creating-blog-with-eleventy/</li>
+<li>https://github.com/11ty/eleventy-base-blog</li>
+<li>https://github.com/drhayes/drhayes.io</li>
+</ul>
+<h3>Hosting on AWS S3</h3>
+<p>Steps can be found <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html">here</a>. I'm really focused on:</p>
+<ol>
+<li>Creating an empty bucket (step 2 in the docs above)</li>
+<li>Configuring the bucket to serve static content (step 2 in the docs above)</li>
+<li>Create a github action that syncs content from github to store the content that is stored in my 11ty <code>_site</code> directory
+<ul>
+<li>That is done <a href="https://github.com/mikemartin1090/portfolio/blob/af75bff3980d3a3059d8c10a4feb02581f36cde1/.github/workflows/workflow.yml">here</a></li>
+</ul>
+</li>
+</ol>
+
+    </body>
+</html>
