@@ -1,0 +1,14 @@
+---
+layout: base.njk
+---
+<h2>Look at my technical posts:</h2>
+{% for techpost in collections.techposts %}
+    <h4><a href="{{ techpost.url }}">{{ techpost.data.title }}</a></h4>
+    <em>{{ techpost.data.date }}</em>
+{% endfor %}
+
+<h2>Look at some of my recipes:</h2>
+{% for recipe in collections.recipes %}
+    <h4><a href="{{ recipe.url }}">{{ recipe.data.title }}</a></h4>
+    <em>{{ recipe.data.date }}</em>
+{% endfor %}

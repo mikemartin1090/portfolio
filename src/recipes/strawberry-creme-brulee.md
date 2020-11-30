@@ -1,5 +1,6 @@
 ---
-pageTitle: Strawberry Creme Brûlée
+title: Strawberry Creme Brûlée
+date: 2020-11-04
 ---
 This will make enough for 6, 4 oz. ramekins!
 

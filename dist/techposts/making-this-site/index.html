@@ -1,13 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Mike's Static Site</title>
-    </head>
-    <body>
-        <h1>Making this site</h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mike's Static Site</title>
 
-        <p>The structure of this site is like so:</p>
+  <link rel="stylesheet" href="/css/site.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto&display=fallback" rel="stylesheet">
+</head>
+<body>
+<header>
+  <a href="/" class="link--home">Mike's static site</a>
+  <a href="/About" class="link--about">About</a>
+</header>
+<h1>Making this site</h1>
+<main>
+  <p>The structure of this site is like so:</p>
 <pre><code>index.html # is my homepage that lists out all 'posts'
 -- recipes # where I am storing my recipes
 -- techposts # where I am writing technical posts...
@@ -35,5 +43,7 @@
 </li>
 </ol>
 
-    </body>
+</main>
+<footer>&copy; Mike's static site</footer>
+</body>
 </html>

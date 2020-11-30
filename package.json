@@ -4,7 +4,10 @@
   "description": "My portfolio that will eventually be a static site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx eleventy",
+    "serve": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy",
+    "start": "eleventy --serve"
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,8 @@
   "homepage": "https://github.com/mikemartin1090/portfolio#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1"
+  },
+  "engines": {
+    "node": "v14.15.1"
   }
 }

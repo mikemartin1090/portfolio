@@ -1,5 +1,6 @@
 ---
-pageTitle: Making this site
+title: Making this site
+date: 2020-11-27
 ---
 The structure of this site is like so:
 ```

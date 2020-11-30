@@ -1,3 +1,10 @@
-figure out 11ty... https://www.11ty.dev/
-
-but really, put some portfolio content in here
+- I like the idea of the tiles here: https://github.com/dafiulh/vredeburg
+- can I hit an API to get a quote and render it at load of each refresh? https://favqs.com/api/qotd Or is that a component of dynamic.
+    - what the hell is cosmicjs??
+    - This talks of it https://www.cosmicjs.com/blog/how-to-build-an-api-powered-static-website-the-best-of-both-worlds
+    - example https://github.com/cosmicjs/static-website
+- css - why would you use "postcss" or "clean-css"?
+    - why use 'inline minified css'? https://www.11ty.dev/docs/quicktips/inline-css/
+    - simply adding CSS to 11ty...https://michaelsoolee.com/add-css-11ty/
+    - I want to mimic this css, so I'll just copy what they have https://github.com/TryGhost/eleventy-starter-ghost/blob/master/.eleventy.js
+- why dont people include the 'dist' directory when committing to github?
