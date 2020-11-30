@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 ---
+
 <h2>Look at some of my recipes:</h2>
 {% for recipe in collections.recipes %}
     <h4><a href="{{ recipe.url }}">{{ recipe.data.title }}</a></h4>

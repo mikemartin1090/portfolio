@@ -1,0 +1,23 @@
+---
+layout: base.njk
+---
+
+{{ layoutContent | safe }}
+
+<div class="flex-grid flex-grid--wrap w-100">
+{% set recipes = collections.recipes %}
+    {% for recipe in recipes | reverse %}
+    <a class="flex-grid__item" href="{{ recipe.url | url }}">
+        <h2 class="home-title">{{ recipe.data.title }}</h2>
+        {% if recipe.data.summary %}
+            <p class="home-summary">
+                {{ recipe.data.summary }}
+            </p>
+        {% endif %}
+    </a>
+    {% endfor %}
+</div>
+
+<div class="flex-grid t-center">
+  <a class="flex-grid__item" href="/recipes"><h2 class="home-title m-0">Read all recipes →</h2></a>
+</div>

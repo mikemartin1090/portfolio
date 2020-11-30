@@ -101,3 +101,66 @@ article img {
   width: 100%;
   height: auto;
 }
+
+/* The Grid(s) */
+.flex-grid {
+	display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+.flex-grid--wrap {
+	flex-wrap: wrap;
+}
+.flex-grid--sb {
+	justify-content: space-between;
+}
+..flex-grid--col {
+	flex-direction: column;
+}
+
+.flex-grid__item {
+	background: white;
+	border-radius: 10px;
+    box-shadow: 0 30px 50px 0 rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    padding: 40px;
+    text-decoration: none;
+    transition: .3s ease all;
+    width: calc(33% - 40px);
+}
+.flex-grid__item:hover {
+	background: var(--link-color);
+	box-shadow: 0 40px 60px 0 rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+.flex-grid__item:hover h2.home-title,
+.flex-grid__item:hover p.home-summary {
+	color: white;
+}
+
+.flex-grid__item h2 {
+	margin: 0 0 10px 0;
+}
+.flex-grid__item p {
+	color: #2d2d2d;
+	margin: 0;
+}
+
+.flex-grid__item--full-width {
+	max-width: 650px;
+	width: calc(100% - 40px) !important;
+}
+
+.flex-grid__item--no-hover:hover {
+	background: white;
+	box-shadow: 0 30px 50px 0 rgba(0,0,0,0.3);
+	transform: none;
+}
+.flex-grid__item--no-hover p {
+	margin: 0 0 20px 0;
+}
